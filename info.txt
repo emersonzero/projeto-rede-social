@@ -1,0 +1,32 @@
+Projeto Redes sociais
+
+# Estrutura básica
+
+<body>
+    <main>
+        <section id="#">
+
+        </section>
+
+        <section id="#">
+
+        </section>
+    </main>
+    
+</body>
+
+# Centralização de estruturas.
+
+    Se ao centralizarmos esse bloco apenas com top e lef de 50% ele não ficará no meio da tela, pois sua referencia seria a extremidade esquerda superior, logo o  bloco não ficaria centralizado. Para isso devemos setar o "transform: translate (-50%, -50%)" para resolver esse problema.
+
+    Ex:  position: absolute;
+         top: 50%;
+         left: 50%;
+        transform: translate(-50%, -50%);
+        height: 400px;
+        width: 400px;
+
+    - Para centralizar a imagem corretamente no blackground podemos abrir a imagem do guimp em em propriedades da imagem saber qual sua dimensão.
+    - Depois de centralizarmos a imagem com referencia do blackground, podemos remover o a cor do blackground para visualizarmos apenas o imagem,
+
+    
