@@ -2,21 +2,21 @@
 
 /* configuração geral */
 
-* {
+* { /* configuração geral */
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body {
+html, body { /* fundo da tela */
     height: 100vh;
     width: 100vw;
     background-color: aqua;
 }
 body{
-    background: url(imagens/fundo-madeira.jpg) no-repeat top center;
+    background: url(imagens/fundo-madeira.jpg) no-repeat top center;  
     background-size: cover; /* Cover= exibe toda a imagem proposta */
-    background-attachment: fixed;/* para não ter rolagemm */
+    background-attachment: fixed;/* para não ter rolagem */
 }
 
 main {
@@ -24,16 +24,16 @@ main {
     height: 100vh;
 }
 
-section#telefone {
+section#telefone { /* configuração do telefone */
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/* centraliza o telefone */
     height: 627px;
     width: 311px;
     background: url('imagens/frame-iphone.png') no-repeat;/* adicionar imagem do telefone */
 }
-    iframe#tela {
+    iframe#tela { /* configuração da imagem dentro do telefone */
     position: relative;
     height: 474px;
     width: 266px;
@@ -41,3 +41,25 @@ section#telefone {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+    section#redes-sociais{
+        text-align: right; /* enviar as imagens para direita */
+    }
+
+    section#redes-sociais img{
+        width: 50px;
+        margin: 10px;
+        border-radius: 50%; /* transforma a imagem redonda */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);/* sombras */
+        box-sizing: border-box; /* o efeito do circulo branca pertencerá ao ícone isoladamente e não a caixa em geral evitando que todos movimentem-se ao passar o mouse em cima */
+    }
+
+    /* Efeitos para os ícones */
+    section#redes-sociais img:hover{
+        border: 2px solid rgba(255, 255, 255, 0.63); /* borda branca nos ícones */
+        /* Ao clicar no ícone com essa configuração os outros ícones irão movimentar-se, logo temos que fazer uma configuração no "secttion#redes-sociais img" que será (box-sizing: border-box) */
+        transform: translate(-3px, -3px); /* movimenta o ícone ao passar o mouse por cima  */
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.651);
+        transition: transform .3s, border 1s;/* velocidade do efeito do ícone e da borda sequencialmente */
+        
+    }
