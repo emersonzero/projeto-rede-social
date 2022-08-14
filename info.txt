@@ -29,4 +29,6 @@ Projeto Redes sociais
     - Para centralizar a imagem corretamente no blackground podemos abrir a imagem do guimp em em propriedades da imagem saber qual sua dimensão.
     - Depois de centralizarmos a imagem com referencia do blackground, podemos remover o a cor do blackground para visualizarmos apenas o imagem,
 
+
+OBS: Gerar favicon: https://www.websiteplanet.com/webtools/favicon-generator/
     
